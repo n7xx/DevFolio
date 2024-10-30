@@ -1,0 +1,60 @@
+:root {
+  --primaryColor: #0d6efd;
+  --whiteColor: #fff;
+  --offcanvasBackdropColor: #acacac;
+  --fontColor: #1e1e1e;
+  --bgBody: f5f5f5;
+  --bodyColor: #4e4e4e;
+}
+.carousel-indicators button[type="button"] {
+  width: 10px;
+  height: 10px;
+  border-radius:50%;
+  border: 1px solid var(--primaryColor);
+}
+.carousel-indicators .active {
+  background: var(--primaryColor);
+}
+#header,
+.header-content {
+  min-height: 60vh;
+}
+#header {
+  margin-top: 50px;
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(13, 110, 253, 0.6)),
+      to(rgba(13, 110, 253, 0.6))
+    ),
+    url(../images/overlay-bg.jpg);
+  background-image: -o-linear-gradient(
+      rgba(13, 110, 253, 0.6),
+      rgba(13, 110, 253, 0.6)
+    ),
+    url(../images/overlay-bg.jpg);
+  background-image: linear-gradient(
+      rgba(13, 110, 253, 0.6),
+      rgba(13, 110, 253, 0.6)
+    ),
+    url(../images/overlay-bg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+#header .container {
+  margin-top: 50px;
+}
+h2 {
+  font-size: 3.5rem;
+}
+#header .breadcrumb {
+  color: #fff;
+}
+#header .breadcrumb .breadcrumb-item:last-child,
+.breadcrumb-item + .breadcrumb-item::before {
+  color: rgba(255, 255, 255, 0.8);
+}
+.portfolio-details-content a:hover {
+  color: rgb(10, 88, 202);
+}
