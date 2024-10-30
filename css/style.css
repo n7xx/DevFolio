@@ -97,6 +97,13 @@ h6 {
 .deep-dropdown:hover .sub-menu {
   display: block !important;
 }
+.deep-dropdown .nav-link {
+    padding-left: 0;
+    padding-right: 0;
+    background-color: transparent;
+    color: var(--fontColor);
+}
+
 .navbar-expand-lg .navbar-nav .dropdown-menu {
   top: 102%;
 }
@@ -131,9 +138,7 @@ h6 {
   -o-transition: 0.5s width;
   transition: 0.5s width;
 }
-.dropdown-menu a:hover {
-  color: var(--primaryColor);
-}
+
 .nav-tabs .nav-link.active {
   position: relative;
 }
@@ -167,6 +172,10 @@ h6 {
 .offcanvas .navbar-nav .nav-link.show {
   color: var(--fontColor);
 }
+.dropdown-item:focus,
+.dropdown-item:hover {
+    background-color: transparent;
+}
 .offcanvas {
   background-color: var(--whiteColor);
   color: var(--fontColor);
@@ -182,9 +191,6 @@ h6 {
 }
 :root:has(.nav-link:focus) .offcanvas {
   display: none;
-}
-.offcanvas-backdrop {
-  background-color: var(--offcanvasBackdropColor);
 }
 :root:has(.nav-link:active) .offcanvas-backdrop {
   background-color: transparent;
